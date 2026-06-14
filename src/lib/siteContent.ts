@@ -147,12 +147,14 @@ export const siteContent = {
     description: "Experience the difference. Try any class, use the facility, meet the coaches. No credit card required.",
     cta: "Claim Free Trial",
     note: "New members only. One trial per person.",
+    pdfLink: "/design-guide.pdf",
+    pdfLabel: "Download Design Guide",
   },
 
   footer: {
     address: "123 Industrial Street, Warehouse District",
     city: "Your City, State 12345",
-    phone: "(555) 123-4567",
+    phone: "7550291783",
     email: "getfit@rawpowerenergy.com",
     hours: [
       { days: "Monday – Friday", time: "5:00 AM – 10:00 PM" },

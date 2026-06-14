@@ -1,9 +1,14 @@
+import { FileText } from 'lucide-react';
 import { siteContent } from '../lib/siteContent';
 
 export default function FinalCtaSection() {
   const handleCtaClick = () => {
     const url = `https://wa.me/${siteContent.whatsapp.number}?text=${encodeURIComponent(siteContent.whatsapp.message)}`;
     window.open(url, '_blank');
+  };
+
+  const handlePdfClick = () => {
+    window.open(siteContent.finalCta.pdfLink, '_blank');
   };
 
   return (
@@ -32,13 +37,23 @@ export default function FinalCtaSection() {
           {siteContent.finalCta.description}
         </p>
 
-        {/* CTA Button */}
-        <button
-          onClick={handleCtaClick}
-          className="bg-primary text-background px-10 py-5 uppercase text-base font-bold tracking-wider hover:shadow-[0_0_50px_rgba(15,255,80,0.8)] hover:scale-105 transition-all duration-200 mb-4"
-        >
-          {siteContent.finalCta.cta}
-        </button>
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4">
+          <button
+            onClick={handleCtaClick}
+            className="bg-primary text-background px-10 py-5 uppercase text-base font-bold tracking-wider hover:shadow-[0_0_50px_rgba(15,255,80,0.8)] hover:scale-105 transition-all duration-200"
+          >
+            {siteContent.finalCta.cta}
+          </button>
+          
+          <button
+            onClick={handlePdfClick}
+            className="bg-surface border-2 border-primary text-primary px-8 py-5 uppercase text-base font-bold tracking-wider hover:bg-primary hover:text-background transition-all duration-200 flex items-center gap-3"
+          >
+            <FileText size={20} />
+            {siteContent.finalCta.pdfLabel}
+          </button>
+        </div>
 
         {/* Note */}
         <p className="text-sm text-text-muted italic">{siteContent.finalCta.note}</p>
