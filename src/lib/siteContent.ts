@@ -153,7 +153,7 @@ export const siteContent = {
     address: "123 Industrial Street, Warehouse District",
     city: "Your City, State 12345",
     phone: "(555) 123-4567",
-    email: "train@rawpowerenergy.com",
+    email: "getfit@rawpowerenergy.com",
     hours: [
       { days: "Monday – Friday", time: "5:00 AM – 10:00 PM" },
       { days: "Saturday – Sunday", time: "7:00 AM – 8:00 PM" },
@@ -174,7 +174,7 @@ export const siteContent = {
   ],
 
   whatsapp: {
-    number: "1234567890", // Placeholder
+    number: "7550291783",
     message: "Hi! I'd like to book a free trial at Raw Power & Energy.",
   },
 } as const;
